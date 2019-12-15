@@ -33,14 +33,20 @@
             midpriority: {
                 //mapSpreadSheetId: '1F9iMxso21ZH2ScSDeHqg8-884AXCTYCeWdc8sVeHUc4',
                 mapSpreadSheetId: '1rwVN3ALN2LN7lO9zNfa4ib1-GEOBdPr7bgeHhCZ12ck',
-                name: 'Medium Priority',
+                name: 'Medium Priority(Feb-Mar)',
                 mapContainerId: 'midpriority'
             },
             highpriority: {
                 //mapSpreadSheetId: '1fn7LLv7qZItaluKYQbqYE-VseCRTa7o2XrQCll21X4A',
                 mapSpreadSheetId: '1_Z_TypvhOvIht5Lix-wIhJANMBmmqvq4HCRX3NJzE7U',
-                name: 'High Priority',
+                name: 'High Priority (Jan-Feb)',
                 mapContainerId: 'highpriority'
+            },
+            highestpriority: {
+                //mapSpreadSheetId: '1fn7LLv7qZItaluKYQbqYE-VseCRTa7o2XrQCll21X4A',
+                mapSpreadSheetId: '1q0zho-Zrk9rrw0EBY-hmdad4WJYhWjpYcNTFRnDFlDo',
+                name: 'Highest Priority (CoF)',
+                mapContainerId: 'highestpriority'
             },
             atlascells: {
                 //mapSpreadSheetId: '1fn7LLv7qZItaluKYQbqYE-VseCRTa7o2XrQCll21X4A',
@@ -74,6 +80,9 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav nav-pills">
                 <li role="presentation">
+                    <a href="#/kerala/highestpriority" role="tab" data-target="#highestpriority" data-toggle="tab">Highest Priority</a>
+                </li>
+                <li role="presentation">
                     <a href="#/kerala/highpriority" role="tab" data-target="#highpriority" data-toggle="tab">High Priority</a>
                 </li>
                 <li role="presentation">
@@ -94,6 +103,7 @@
 </nav>
 <div class="map-parent container-fluid">
     <div class="tab-content">
+        <div role="tabpanel" class="tab-pane map-container" id="highestpriority"></div>
         <div role="tabpanel" class="tab-pane map-container" id="highpriority"></div>
         <div role="tabpanel" class="tab-pane map-container" id="midpriority"></div>
         <div role="tabpanel" class="tab-pane map-container" id="lowpriority"></div>
